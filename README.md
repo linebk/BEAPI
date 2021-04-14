@@ -25,9 +25,9 @@
         <li><a href="#ANIMESTREAM">AnimeStream</a></li>
         <li><a href="#ANIMEXIN">AnimeXin</a></li>
         <li><a href="#AUTHKEY2PRIMARY">Authkey2Primary</a></li>
-        <li><a href="#ANIMEXIN">AnimeXin</a></li>
-        <li><a href="#ANIMEXIN">AnimeXin</a></li>
-        <li><a href="#ANIMEXIN">AnimeXin</a></li>
+        <li><a href="#BRAINLY">BrainlySearch</a></li>
+        <li><a href="#COOKPAD">CookpadSearch</a></li>
+        <li><a href="#DANBOORU">DanbooruPage</a></li>
       </ul>
     </li>
   </ol>
@@ -133,5 +133,82 @@ coming soon...
 ```PY
   api = BEAPI("your_apikey")
   res = api.authKeyToPrimary('your line authkey')
+  api.pretyPrint(res) #for prety print result
+```
+
+
+<br />
+<br />
+
+
+### BRAINLY
+**URL :** 
+<https://beapi.me/brainly>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `search` ( your search query )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.brainlySearch('kenapa bumi bulat')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+<br />
+
+
+### COOKPAD
+**URL :** 
+<https://beapi.me/cookpad>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `search` ( your search query )
+- `lang` ( language [en,id] )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.cookpadSearch('nastar', 'id')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+<br />
+
+
+### DANBOORU
+**URL :** 
+<https://beapi.me/danbooru>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `page` ( page of result )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.danbooruPage(1)
   api.pretyPrint(res) #for prety print result
 ```
