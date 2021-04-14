@@ -36,14 +36,14 @@
 <br />
 <br />
 
-## Installation
+## [ Installation ]
 coming soon...
 
 <br />
 <br />
 
 <!-- API LIST -->
-## API List
+## [ API List ]
 ### ALPHACODERS
 **URL :** 
 <https://beapi.me/alphacoders>
@@ -108,6 +108,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### AUTHKEY2PRIMARY
 **URL :** 
@@ -130,6 +131,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### BRAINLY
 **URL :** 
@@ -152,6 +154,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### COOKPAD
 **URL :** 
@@ -175,6 +178,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### DANBOORU
 **URL :** 
