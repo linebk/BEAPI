@@ -15,11 +15,11 @@
   
   <!-- TABLE OF CONTENTS -->
 <details open="open">
-  <summary>List API</summary>
+  <summary>Site Map</summary>
   <ol>
-    <li><a href="#installation">Installation</a></li>
+    <li><a href="#Installation"> Installation</a></li>
     <li>
-      <a href="#API-LIST">API LIST</a>
+      <a href="#API-List"> API List</a>
       <ul>
         <li><a href="#ALPHACODERS">AlphaCoders</a></li>
         <li><a href="#ANIMESTREAM">AnimeStream</a></li>
@@ -33,11 +33,17 @@
   </ol>
 </details>
 
+<br />
+<br />
+
 ## Installation
 coming soon...
 
+<br />
+<br />
+
 <!-- API LIST -->
-## API LIST
+## API List
 ### ALPHACODERS
 **URL :** 
 <https://beapi.me/alphacoders>
@@ -61,10 +67,6 @@ coming soon...
 ```
 
 
-<br />
-<br />
-
-
 ### ANIMESTREAM
 **URL :** 
 <https://beapi.me/animeongoing>
@@ -86,10 +88,6 @@ coming soon...
 ```
 
 
-<br />
-<br />
-
-
 ### ANIMEXIN
 **URL :** 
 <https://beapi.me/animexin>
@@ -109,10 +107,6 @@ coming soon...
   res = api.animexinOngoing()
   api.pretyPrint(res) #for prety print result
 ```
-
-
-<br />
-<br />
 
 
 ### AUTHKEY2PRIMARY
@@ -137,10 +131,6 @@ coming soon...
 ```
 
 
-<br />
-<br />
-
-
 ### BRAINLY
 **URL :** 
 <https://beapi.me/brainly>
@@ -161,9 +151,6 @@ coming soon...
   res = api.brainlySearch('kenapa bumi bulat')
   api.pretyPrint(res) #for prety print result
 ```
-
-<br />
-<br />
 
 
 ### COOKPAD
@@ -187,9 +174,6 @@ coming soon...
   res = api.cookpadSearch('nastar', 'id')
   api.pretyPrint(res) #for prety print result
 ```
-
-<br />
-<br />
 
 
 ### DANBOORU
