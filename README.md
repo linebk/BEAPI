@@ -66,6 +66,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### ANIMESTREAM
 **URL :** 
@@ -87,6 +88,7 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
 
 ### ANIMEXIN
 **URL :** 
