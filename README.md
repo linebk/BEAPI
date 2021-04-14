@@ -28,7 +28,7 @@
   </ol>
 </details>
 
-## Instalation
+## Installation
 coming soon...
 
 <!-- API LIST -->
