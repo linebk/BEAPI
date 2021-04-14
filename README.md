@@ -21,8 +21,13 @@
     <li>
       <a href="#API-LIST">API LIST</a>
       <ul>
-        <li><a href="#AlphaCoders">AlphaCoders</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li><a href="#ALPHACODERS">AlphaCoders</a></li>
+        <li><a href="#ANIMESTREAM">AnimeStream</a></li>
+        <li><a href="#ANIMEXIN">AnimeXin</a></li>
+        <li><a href="#AUTHKEY2PRIMARY">Authkey2Primary</a></li>
+        <li><a href="#ANIMEXIN">AnimeXin</a></li>
+        <li><a href="#ANIMEXIN">AnimeXin</a></li>
+        <li><a href="#ANIMEXIN">AnimeXin</a></li>
       </ul>
     </li>
   </ol>
@@ -33,9 +38,12 @@ coming soon...
 
 <!-- API LIST -->
 ## API LIST
-### AlphaCoders
+### ALPHACODERS
 **URL :** 
 <https://beapi.me/alphacoders>
+
+**PRICE :**
+`10 Credit`
 
 **METHOD :**
 `GET`
@@ -49,5 +57,81 @@ coming soon...
 ```PY
   api = BEAPI("your_apikey")
   res = api.alphaCodersSearch("naruto", 1)
+  api.pretyPrint(res) #for prety print result
+```
+
+
+<br />
+<br />
+
+
+### ANIMESTREAM
+**URL :** 
+<https://beapi.me/animeongoing>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.animeOngoing()
+  api.pretyPrint(res) #for prety print result
+```
+
+
+<br />
+<br />
+
+
+### ANIMEXIN
+**URL :** 
+<https://beapi.me/animexin>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.animexinOngoing()
+  api.pretyPrint(res) #for prety print result
+```
+
+
+<br />
+<br />
+
+
+### AUTHKEY2PRIMARY
+**URL :** 
+<https://beapi.me/authkey2primary>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `authkey` ( your authkey line )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.authKeyToPrimary('your line authkey')
   api.pretyPrint(res) #for prety print result
 ```
