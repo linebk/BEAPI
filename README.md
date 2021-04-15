@@ -41,6 +41,18 @@
         <li><a href="#LINEPRIMARYCONVERT">Primary2Secondary</a></li>
         <li><a href="#MUSICALLYDOWN">MusicallyDown (TikTok Download)</a></li>
         <li><a href="#9GAG">NineGag</a></li>
+        <li><a href="#PHOTOFUNIA">PhotoFunia</a></li>
+        <li><a href="#PRIMBON">Primbon</a></li>
+        <li><a href="#SIMISIMI">SimiSimi</a></li>
+        <li><a href="#SHORTLINK">ShortLink</a></li>
+        <li><a href="#SSWEB">ScreenshotWeb</a></li>
+        <li><a href="#TRACKRESI">TrackResi</a></li>
+        <li><a href="#TEXT2SPEECH">Text2Speech</a></li>
+        <li><a href="#TRANSLATOR">Translator+Text2Speech</a></li>
+        <li><a href="#TIKTOK">TikTok</a></li>
+        <li><a href="#TEXTPRO">TextPro</a></li>
+        <li><a href="#STORAGEUPLOAD">StorageUpload</a></li>
+        <li><a href="#YOUTUBE">Youtube MP3/MP4</a></li>
       </ul>
     </li>
   </ol>
@@ -538,6 +550,8 @@ coming soon...
   api.pretyPrint(res) #for prety print result
 ```
 
+<br />
+
 ### 9GAG
 **URL :** 
 <https://beapi.me/9gag-fresh> || <https://beapi.me/9gag-hot>
@@ -560,4 +574,352 @@ coming soon...
   #OR
   res = api.nineGagHot('funny')
   api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### 1CAKRANDOM
+**URL :** 
+<https://beapi.me/1cak>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.oneCakRandom()
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### PHOTOFUNIA
+**URL :** 
+<https://beapi.me/photofunia>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `args` ( for detail: <https://beapi.me/photofunia/info> )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  #Photo With Url
+  #args = {"effect": "concrete-jungle", "image": "https://cdn.idntimes.com/content-images/post/20170506/foto-4-5435490d3b49fd5a975dae93a4417092_600x400.jpg"}
+  #Photo With Path
+  #url = api.uploadStorage("./test.png")["result"]
+  #args = {"effect": "concrete-jungle", "image": url}
+  #Text Example
+  args = {"effect": "snow-sign", "text": "hallo semua"}
+  res = api.photoFunia(args)
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### PRIMBON
+**URL :** 
+<https://beapi.me/primbon>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+> PRIMBON NAMA
+- `apikey` ( optional, can input in header/arg )
+- `nama` ( your name )
+> PRIMBON BINTANG
+- `apikey` ( optional, can input in header/arg )
+- `zodiac` ( your zodiac )
+> PRIMBON KECOCOKAN
+- `apikey` ( optional, can input in header/arg )
+- `nama1` ( your name )
+- `nama2` ( your couple name )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  #PRIMBON NAMA
+  res = api.primbonNama("naruto")
+  print(res)
+  #PRIMBON BINTANG
+  res = api.primbonZodiac("aries")
+  print(res)
+  #PRIMBON KECOCOKAN
+  res = api.primbonKecocokan("naruto","hinata")
+  print(res)
+```
+
+<br />
+
+### SIMISIMI
+**URL :** 
+<https://beapi.me/simisimi>
+
+**PRICE :**
+`5 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `text` ( your text )
+- `lang` ( your language code )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.simiTalk('anjing', 'id')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### SHORTLINK
+**URL :** 
+<https://beapi.me/short-link>
+
+**PRICE :**
+`5 Credit`
+
+**METHOD :**
+`POST`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**DATA :**
+- `url` ( your long url )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.shortLink('https://google.com')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### SSWEB
+**URL :** 
+<https://beapi.me/ss-web>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`POST`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**DATA :**
+- `url` ( your url )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.SSWeb('https://google.com')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### TRACKRESI
+**URL :** 
+<https://beapi.me/track-resi>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `resi` ( your resi tracking )
+- `courier` ( your courier ['pos', 'wahana', 'jnt', 'sap', 'sicepat', 'jet', 'dse', 'first', 'ninja', 'lion', 'idl', 'rex', 'ide', 'sentral'] )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.trackResi('your_resi', 'your_courier')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### TRANSLATOR
+**URL :** 
+<https://beapi.me/translate>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `text` ( your text )
+- `lang` ( your language code <https://beapi.me/language> )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.translator('anjing', 'en')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### TEXT2SPEECH
+**URL :** 
+<https://beapi.me/tts>
+
+**PRICE :**
+`5 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `text` ( your text )
+- `lang` ( your language code <https://beapi.me/language> )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.tts('anjing', 'en')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### TIKTOK
+**URL :** 
+<https://beapi.me/tiktok>
+
+**PRICE :**
+`5 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+> POST
+- `apikey` ( optional, can input in header/arg )
+- `url` ( your tiktok url )
+> PROFILE
+- `apikey` ( optional, can input in header/arg )
+- `user` ( your tiktok user )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.tiktokPost("https://www.tiktok.com/@msglowbdl/video/6933152608211307778")
+  api.pretyPrint(res) #for prety print result
+  res = api.tiktokProfile("@msglowbdl")
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### TEXTPRO
+**URL :** 
+<https://beapi.me/textpro>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `args` ( for detail: <https://beapi.me/textpro/info> )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  args = {"id": "1", "text": "hahaha", "text2": "huhuhu"}
+  res = api.textPro(args)
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### STORAGEUPLOAD
+**URL :** 
+<https://beapi.me/storage>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`POST`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+
+**DATA :**
+- `file` ( your file binary )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.uploadStorage('path_to_file')
+  api.pretyPrint(res) #for prety print result
+```
+
+
+<br />
+
+### YOUTUBE
+**URL :** 
+<https://beapi.me/ytmp3> || <https://beapi.me/ytmp4>
+
+**PRICE :**
+`5 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+> SEARCH
+- `apikey` ( optional, can input in header/arg )
+- `search` ( your search query )
+> URL
+- `apikey` ( optional, can input in header/arg )
+- `url` ( your youtube url )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  #res = api.youtubeMp4Url("https://www.youtube.com/watch?v=N5_9eyFqD5E")
+  #api.pretyPrint(res)
+  #res = api.youtubeMp4Search("https://www.youtube.com/watch?v=N5_9eyFqD5E")
+  #api.pretyPrint(res)
+  #res = api.youtubeMp3Url("https://www.youtube.com/watch?v=N5_9eyFqD5E")
+  #api.pretyPrint(res)
+  res = api.youtubeMp3Search("https://www.youtube.com/watch?v=N5_9eyFqD5E")
+  api.pretyPrint(res)
 ```
