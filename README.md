@@ -43,7 +43,9 @@
         <li><a href="#9GAG">NineGag</a></li>
         <li><a href="#PHOTOFUNIA">PhotoFunia</a></li>
         <li><a href="#PRIMBON">Primbon</a></li>
+        <li><a href="#REFACE">Reface</a></li>
         <li><a href="#SIMISIMI">SimiSimi</a></li>
+        <li><a href="#SMULE">Smule</a></li>
         <li><a href="#SHORTLINK">ShortLink</a></li>
         <li><a href="#SSWEB">ScreenshotWeb</a></li>
         <li><a href="#TRACKRESI">TrackResi</a></li>
@@ -620,7 +622,7 @@ coming soon...
   #Photo With Url
   #args = {"effect": "concrete-jungle", "image": "https://cdn.idntimes.com/content-images/post/20170506/foto-4-5435490d3b49fd5a975dae93a4417092_600x400.jpg"}
   #Photo With Path
-  #url = api.uploadStorage("./test.png")["result"]
+  #url = api.uploadStorage("path_to_file")["result"]
   #args = {"effect": "concrete-jungle", "image": url}
   #Text Example
   args = {"effect": "snow-sign", "text": "hallo semua"}
@@ -668,6 +670,36 @@ coming soon...
 
 <br />
 
+### REFACE
+**URL :** 
+<https://beapi.me/reface>
+
+**PRICE :**
+`15 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `args` ( for detail: <https://beapi.me/reface/info> )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  #WITH PATH
+  #url = url = api.uploadStorage("path_to_file")["result"]
+  #args = {"id": "bf6c5858-41d4-45f4-9b75-42ae0bf63829", "image": url}
+  #res = api.reface(args)
+  #WITH URL
+  url = "https://cdn.idntimes.com/content-images/post/20170506/foto-4-5435490d3b49fd5a975dae93a4417092_600x400.jpg"
+  args = {"id": "bf6c5858-41d4-45f4-9b75-42ae0bf63829", "image": url}
+  res = api.reface(args)
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
 ### SIMISIMI
 **URL :** 
 <https://beapi.me/simisimi>
@@ -687,6 +719,38 @@ coming soon...
 ```PY
   api = BEAPI("your_apikey")
   res = api.simiTalk('anjing', 'id')
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### SMULE
+**URL :** 
+<https://beapi.me/smule/post> || <https://beapi.me/smule/post> || <https://beapi.me/smule/post>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+> SMULE PERFORMANCE
+- `apikey` ( optional, can input in header/arg )
+- `user` ( your smule id )
+> SMULE PROFILE
+- `apikey` ( optional, can input in header/arg )
+- `user` ( your smule id )
+> SMULE POST
+- `apikey` ( optional, can input in header/arg )
+- `url` ( your smule post url )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  #res = api.smulePerformance("JoseffMcKenneth")
+  #res = api.smuleProfile("JoseffMcKenneth")
+  res = api.smulePost("https://www.smule.com/p/2352981025_3553994501")
   api.pretyPrint(res) #for prety print result
 ```
 
