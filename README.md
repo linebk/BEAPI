@@ -37,9 +37,9 @@
         <li><a href="#KBBISEARCH">KBBISearch</a></li>
         <li><a href="#LINEAPPNAMELAST">LineAppNameLastest</a></li>
         <li><a href="#LINEAPPNAMERANDOM">LineAppNameRandom</a></li>
-        <li><a href="#9GAG">NineGag</a></li>
-        <li><a href="#9GAG">NineGag</a></li>
-        <li><a href="#9GAG">NineGag</a></li>
+        <li><a href="#LINEQRROTATE">LineQrRotate</a></li>
+        <li><a href="#LINEPRIMARYCONVERT">Primary2Secondary</a></li>
+        <li><a href="#MUSICALLYDOWN">MusicallyDown (TikTok Download)</a></li>
         <li><a href="#9GAG">NineGag</a></li>
       </ul>
     </li>
@@ -445,5 +445,119 @@ coming soon...
 ```PY
   api = BEAPI("your_apikey")
   res = api.lineAppNameRandom("chromeos")
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### LINEQRROTATE
+**URL :** 
+<https://beapi.me/lineqr>
+
+**PRICE :**
+`15 Credit`
+
+**METHOD :**
+`GET`
+
+**HEADERS :**
+- `apikey` ( optional, can input in header/arg )
+- `appname` ( your appname login )
+- `sysname` ( your login system name )
+- `cert` ( your account cert, you can fill `None` if don't have)
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  cert = None
+  res = api.lineQr(sysname="BE-Team", appName="IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", cert=cert)
+  print("QR Link: " + res["result"]["qr_link"])
+  if not cert:
+      print("Callback Pincode: " + res["result"]["cb_pincode"])
+      for num in range(600):
+          resx = api.sendGet(res["result"]["cb_pincode"].replace(api.host,""))
+          if resx["result"] != "not ready":
+              print("Your Pincode: " + resx["result"])
+              break
+          time.sleep(1)
+      if resx["result"] == "not ready": raise Exception("login timeout!!")
+  for num in range(600):
+      resx = api.sendGet(res["result"]["cb_token"].replace(api.host,""))
+      if resx["result"] != "not ready":
+          print("Your Cert: " + resx["result"]["cert"])
+          print("Your Token: " + resx["result"]["token"])
+          cert, authToken= resx["result"]["cert"], resx["result"]["token"]
+          break
+      time.sleep(1)
+  if resx["result"] == "not ready": raise Exception("login timeout!!")
+```
+
+### LINEPRIMARYCONVERT
+**URL :** 
+<https://beapi.me/lineprimary2second>
+
+**PRICE :**
+`15 Credit`
+
+**METHOD :**
+`GET`
+
+**HEADERS :**
+- `apikey` ( optional, can input in header/arg )
+- `appname` ( your appname login )
+- `sysname` ( your login system name )
+- `authtoken` ( your primary authtoken)
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.linePrimaryConvert(authToken="your_authtoken", sysname="BE-Team", appName="IOSIPAD\t10.5.2\tiPhone 8\t11.2.5")
+  api.pretyPrint(res) #for prety print result
+```
+
+<br />
+
+### MUSICALLYDOWN
+**URL :** 
+<https://beapi.me/musicallydown>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `url` ( your tiktok url )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.musicallyDown('https://www.tiktok.com/@msglowbdl/video/6933152608211307778')
+  api.pretyPrint(res) #for prety print result
+```
+
+### 9GAG
+**URL :** 
+<https://beapi.me/9gag-fresh> || <https://beapi.me/9gag-hot>
+
+**PRICE :**
+`10 Credit`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( optional, can input in header/arg )
+- `category` ( 9gag page category ['funny', 'among-us', 'animals', 'anime-manga', 'animewaifu', 'animewallpaper', 'apexlegends', 'ask9gag', 'awesome', 'car', 'comic-webtoon', 'coronavirus', 'cosplay', 'countryballs', 'home-living', 'crappydesign', 'cyberpunk2077', 'drawing-diy-crafts', 'rate-my-outfit', 'food-drinks', 'football', 'fortnite', 'got', 'gaming', 'gif', 'girl', 'girlcelebrity', 'guy', 'history', 'horror', 'kpop', 'timely', 'leagueoflegends', 'lego', 'superhero', 'meme', 'movie-tv', 'music', 'basketball', 'nsfw', 'overwatch', 'pcmr', 'pokemon', 'politics', 'pubg', 'random', 'relationship', 'savage', 'satisfying', 'science-tech', 'sport', 'starwars', 'school', 'travel-photography', 'video', 'wallpaper', 'warhammer', 'wholesome', 'wtf', 'darkhumor', 'funny', 'nsfw', 'girl', 'wtf', 'anime-manga', 'random', 'animals', 'animewaifu', 'awesome', 'car', 'comic-webtoon', 'cosplay', 'cyberpunk2077', 'gaming', 'gif', 'girlcelebrity', 'leagueoflegends', 'meme', 'politics', 'relationship', 'savage', 'video', 'algeria', 'argentina', 'australia', 'austria', 'bosniaherzegovina', 'bahrain', 'belgium', 'bolivia', 'brazil', 'bulgaria', 'canada', 'chile', 'colombia', 'costarica', 'croatia', 'cyprus', 'czechia', 'denmark', 'dominicanrepublic', 'ecuador', 'egypt', 'estonia', 'finland', 'france', 'georgia', 'germany', 'ghana', 'greece', 'guatemala', 'hongkong', 'hungary', 'iceland', 'india', 'indonesia', 'iraq', 'ireland', 'israel', 'italy', 'japan', 'jordan', 'kenya', 'kuwait', 'latvia', 'lebanon', 'lithuania', 'luxembourg', 'malaysia', 'mexico', 'montenegro', 'morocco', 'nepal', 'netherlands', 'newzealand', 'nigeria', 'norway', 'oman', 'pakistan', 'peru', 'philippines', 'poland', 'portugal', 'puertorico', 'qatar', 'romania', 'russia', 'saudiarabia', 'senegal', 'serbia', 'singapore', 'slovakia', 'slovenia', 'southafrica', 'southkorea', 'spain', 'srilanka', 'sweden', 'switzerland', 'taiwan', 'tanzania', 'thailand', 'tunisia', 'turkey', 'uae', 'usa', 'ukraine', 'uk', 'uruguay', 'vietnam', 'yemen', 'zimbabwe'] )
+
+**PYTHON**
+```PY
+  api = BEAPI("your_apikey")
+  res = api.nineGagFresh('funny')
+  api.pretyPrint(res) #for prety print result
+  #OR
+  res = api.nineGagHot('funny')
   api.pretyPrint(res) #for prety print result
 ```
