@@ -819,7 +819,7 @@ coming soon...
 <https://beapi.me/tiktok>
 
 **PRICE :**
-`5 Credit`
+`10 Credit`
 
 **METHOD :**
 `GET`
