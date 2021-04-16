@@ -67,9 +67,9 @@ awsome api feature from me
 <br />
 
 ## [ Installation ]
-'''SH
+```SH
 pip3 install BEAPI
-'''
+```
 
 <br />
 <br />
