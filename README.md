@@ -767,7 +767,7 @@ api.pretyPrint(res) #for prety print result
 
 ### SMULE
 **URL :** 
-<https://beapi.me/smule/post> || <https://beapi.me/smule/post> || <https://beapi.me/smule/post>
+<https://beapi.me/smule/performance> || <https://beapi.me/smule/user> || <https://beapi.me/smule/post>
 
 **PRICE :**
 `5 Credit`
