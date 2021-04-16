@@ -10,6 +10,8 @@
     <a href="https://wa.me/6289625658302?text=Report+Bug">REPORT ERROR</a>
     ·
     <a href="https://wa.me/6289625658302?text=Request+Feature">REQUEST FEATURE</a>
+    ·
+    <a href="https://wa.me/6289625658302?text=Buy+Api">BUY API</a>
   </p>
   
   
@@ -21,6 +23,7 @@
     <li>
       <a href="#API-List"> API List</a>
       <ul>
+        <li><a href="#APIKEY">Apikey</a></li>
         <li><a href="#ALPHACODERS">AlphaCoders</a></li>
         <li><a href="#ANIMESTREAM">AnimeStream</a></li>
         <li><a href="#ANIMEXIN">AnimeXin</a></li>
@@ -71,6 +74,25 @@ coming soon...
 
 <!-- API LIST -->
 ## [ API List ]
+
+
+<br />
+
+### APIKEY
+**URL :** 
+<https://beapi.me/status> ( credit status ) || <https://beapi.me/log> ( log requests )
+
+**PRICE :**
+`Free`
+
+**METHOD :**
+`GET`
+
+**ARGS :**
+- `apikey` ( your apikey )
+
+<br />
+
 ### ALPHACODERS
 **URL :** 
 <https://beapi.me/alphacoders>
@@ -488,14 +510,14 @@ coming soon...
   print("QR Link: " + res["result"]["qr_link"])
   if not cert:
       print("Callback Pincode: " + res["result"]["cb_pincode"])
-      for num in range(600):
+      for num in range(60):
           resx = api.sendGet(res["result"]["cb_pincode"].replace(api.host,""))
           if resx["result"] != "not ready":
               print("Your Pincode: " + resx["result"])
               break
           time.sleep(1)
       if resx["result"] == "not ready": raise Exception("login timeout!!")
-  for num in range(600):
+  for num in range(60):
       resx = api.sendGet(res["result"]["cb_token"].replace(api.host,""))
       if resx["result"] != "not ready":
           print("Your Cert: " + resx["result"]["cert"])
