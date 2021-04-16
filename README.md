@@ -446,7 +446,7 @@ coming soon...
 
 ### LINEAPPNAMELAST
 **URL :** 
-<https://beapi.me/appnameline>
+<https://beapi.me/line_appname>
 
 **PRICE :**
 `Free`
