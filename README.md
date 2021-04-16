@@ -110,6 +110,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.alphaCodersSearch("naruto", 1)
   api.pretyPrint(res) #for prety print result
@@ -132,6 +133,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.animeOngoing()
   api.pretyPrint(res) #for prety print result
@@ -154,6 +156,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.animexinOngoing()
   api.pretyPrint(res) #for prety print result
@@ -177,6 +180,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.authKeyToPrimary('your line authkey')
   api.pretyPrint(res) #for prety print result
@@ -200,6 +204,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.brainlySearch('kenapa bumi bulat')
   api.pretyPrint(res) #for prety print result
@@ -224,6 +229,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.cookpadSearch('nastar', 'id')
   api.pretyPrint(res) #for prety print result
@@ -247,6 +253,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.danbooruPage(1)
   api.pretyPrint(res) #for prety print result
@@ -270,6 +277,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.gifSearch("naruto")
   api.pretyPrint(res) #for prety print result
@@ -293,6 +301,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.googleImage("naruto")
   api.pretyPrint(res) #for prety print result
@@ -316,6 +325,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.googleSearch("naruto")
   api.pretyPrint(res) #for prety print result
@@ -339,6 +349,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #WITH URL
   res = api.imageReverseWithUrl("static_img_url")
@@ -365,6 +376,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.instaPost("https://www.instagram.com/p/CNLOThQjnzU/")
   api.pretyPrint(res) #for prety print result
@@ -388,6 +400,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.instaProfile("instagram")
   api.pretyPrint(res) #for prety print result
@@ -411,6 +424,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #WITH SEARCH QUERY
   res = api.jooxSearch("bring me the horizon")
@@ -437,6 +451,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.KBBISearch("makan")
   api.pretyPrint(res) #for prety print result
@@ -456,6 +471,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.lineAppName()
   api.pretyPrint(res) #for prety print result
@@ -479,6 +495,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.lineAppNameRandom("chromeos")
   api.pretyPrint(res) #for prety print result
@@ -504,6 +521,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   cert = None
   res = api.lineQr(sysname="BE-Team", appName="IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", cert=cert)
@@ -528,6 +546,8 @@ coming soon...
   if resx["result"] == "not ready": raise Exception("login timeout!!")
 ```
 
+<br />
+
 ### LINEPRIMARYCONVERT
 **URL :** 
 <https://beapi.me/lineprimary2second>
@@ -546,6 +566,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.linePrimaryConvert(authToken="your_authtoken", sysname="BE-Team", appName="IOSIPAD\t10.5.2\tiPhone 8\t11.2.5")
   api.pretyPrint(res) #for prety print result
@@ -569,6 +590,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.musicallyDown('https://www.tiktok.com/@msglowbdl/video/6933152608211307778')
   api.pretyPrint(res) #for prety print result
@@ -592,6 +614,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.nineGagFresh('funny')
   api.pretyPrint(res) #for prety print result
@@ -617,6 +640,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.oneCakRandom()
   api.pretyPrint(res) #for prety print result
@@ -640,6 +664,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #Photo With Url
   #args = {"effect": "concrete-jungle", "image": "https://cdn.idntimes.com/content-images/post/20170506/foto-4-5435490d3b49fd5a975dae93a4417092_600x400.jpg"}
@@ -678,6 +703,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #PRIMBON NAMA
   res = api.primbonNama("naruto")
@@ -708,6 +734,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #WITH PATH
   #url = url = api.uploadStorage("path_to_file")["result"]
@@ -739,6 +766,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.simiTalk('anjing', 'id')
   api.pretyPrint(res) #for prety print result
@@ -769,6 +797,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #res = api.smulePerformance("JoseffMcKenneth")
   #res = api.smuleProfile("JoseffMcKenneth")
@@ -796,6 +825,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.shortLink('https://google.com')
   api.pretyPrint(res) #for prety print result
@@ -821,6 +851,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.SSWeb('https://google.com')
   api.pretyPrint(res) #for prety print result
@@ -845,6 +876,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.trackResi('your_resi', 'your_courier')
   api.pretyPrint(res) #for prety print result
@@ -869,6 +901,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.translator('anjing', 'en')
   api.pretyPrint(res) #for prety print result
@@ -893,6 +926,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.tts('anjing', 'en')
   api.pretyPrint(res) #for prety print result
@@ -920,6 +954,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.tiktokPost("https://www.tiktok.com/@msglowbdl/video/6933152608211307778")
   api.pretyPrint(res) #for prety print result
@@ -945,6 +980,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   args = {"id": "1", "text": "hahaha", "text2": "huhuhu"}
   res = api.textPro(args)
@@ -971,6 +1007,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   res = api.uploadStorage('path_to_file')
   api.pretyPrint(res) #for prety print result
@@ -999,6 +1036,7 @@ coming soon...
 
 **PYTHON**
 ```PY
+  from BEAPI import *
   api = BEAPI("your_apikey")
   #res = api.youtubeMp4Url("https://www.youtube.com/watch?v=N5_9eyFqD5E")
   #api.pretyPrint(res)
