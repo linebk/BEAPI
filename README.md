@@ -98,7 +98,7 @@ coming soon...
 <https://beapi.me/alphacoders>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -123,7 +123,7 @@ coming soon...
 <https://beapi.me/animeongoing>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -146,7 +146,7 @@ coming soon...
 <https://beapi.me/animexin>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -169,7 +169,7 @@ coming soon...
 <https://beapi.me/authkey2primary>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -193,7 +193,7 @@ coming soon...
 <https://beapi.me/brainly>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -217,7 +217,7 @@ coming soon...
 <https://beapi.me/cookpad>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -242,7 +242,7 @@ coming soon...
 <https://beapi.me/danbooru>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -266,7 +266,7 @@ coming soon...
 <https://beapi.me/gif>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -290,7 +290,7 @@ coming soon...
 <https://beapi.me/googleimg>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -314,7 +314,7 @@ coming soon...
 <https://beapi.me/googlesearch>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -338,7 +338,7 @@ coming soon...
 <https://beapi.me/imgreverse>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -365,7 +365,7 @@ coming soon...
 <https://beapi.me/igpost>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -389,7 +389,7 @@ coming soon...
 <https://beapi.me/igprofile>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -413,7 +413,7 @@ coming soon...
 <https://beapi.me/joox>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -440,7 +440,7 @@ coming soon...
 <https://beapi.me/kbbi>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -484,7 +484,7 @@ coming soon...
 <https://beapi.me/line_appname_random>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -508,7 +508,7 @@ coming soon...
 <https://beapi.me/lineqr>
 
 **PRICE :**
-`15 Credit`
+`10 Credit`
 
 **METHOD :**
 `GET`
@@ -553,7 +553,7 @@ coming soon...
 <https://beapi.me/lineprimary2second>
 
 **PRICE :**
-`15 Credit`
+`10 Credit`
 
 **METHOD :**
 `GET`
@@ -579,7 +579,7 @@ coming soon...
 <https://beapi.me/musicallydown>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -603,7 +603,7 @@ coming soon...
 <https://beapi.me/9gag-fresh> || <https://beapi.me/9gag-hot>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -630,7 +630,7 @@ coming soon...
 <https://beapi.me/1cak>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -653,7 +653,7 @@ coming soon...
 <https://beapi.me/photofunia>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -684,7 +684,7 @@ coming soon...
 <https://beapi.me/primbon>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -723,7 +723,7 @@ coming soon...
 <https://beapi.me/reface>
 
 **PRICE :**
-`15 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -779,7 +779,7 @@ coming soon...
 <https://beapi.me/smule/post> || <https://beapi.me/smule/post> || <https://beapi.me/smule/post>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -838,7 +838,7 @@ coming soon...
 <https://beapi.me/ss-web>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `POST`
@@ -864,7 +864,7 @@ coming soon...
 <https://beapi.me/track-resi>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -889,7 +889,7 @@ coming soon...
 <https://beapi.me/translate>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -939,7 +939,7 @@ coming soon...
 <https://beapi.me/tiktok>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -969,7 +969,7 @@ coming soon...
 <https://beapi.me/textpro>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `GET`
@@ -994,7 +994,7 @@ coming soon...
 <https://beapi.me/storage>
 
 **PRICE :**
-`10 Credit`
+`5 Credit`
 
 **METHOD :**
 `POST`
