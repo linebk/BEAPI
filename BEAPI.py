@@ -126,8 +126,9 @@ class BEAPI():
     def lineQrAuthToken(self, cb):
         for num in range(60):
             res = self.sendGet(cb.replace(self.host,""))
-            return res["result"]["token"], res["result"]["cert"]
-        time.sleep(1)
+            if "token" in res["result"]:
+                return res["result"]["token"], res["result"]["cert"]
+            time.sleep(1)
         raise Exception("login timeout!!")
         
 
@@ -243,3 +244,14 @@ class BEAPI():
         params = {"search": search}
         return self.sendGet("/ytmp4",params=params)
 
+api = BEAPI("herymantaps")
+cert = None
+res = api.lineQr(sysname="BE-Team", appName="IOSIPAD\t10.5.2\tiPhone 8\t11.2.5", cert=cert)
+
+qrLink = res["result"]["qr_link"] #your qrlink
+print(qrLink)
+pincode = api.lineQrPincode(res["result"]["cb_pincode"]) #your pincode
+print(pincode)
+authToken,cert = api.lineQrAuthToken(res["result"]["cb_token"]) #your authtoken and cert
+print(authToken)
+print(cert)
